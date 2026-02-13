@@ -47,15 +47,13 @@ class LinkedList:
             temp = temp.next
         print("Null")
         
-list = LinkedList()
-list.insert_at_end(3) 
-list.insert_at_end(5) 
-list.insert_at_end(13)  
-list.insert_at_end(2)
+call = LinkedList()
+for e in [3,5,13,2]:
+    call.insert_at_end(e)
 
 print("Create Linked List") 
-list.display()
-list.delete_node(2)
-print("Delete Linked List Element : 1")
-list.display()
+call.display()
+call.delete_node(2)
+print("Delete Linked List Element : 2")
+call.display()
 
