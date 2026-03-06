@@ -19,9 +19,9 @@ def partition(data,first,last):
     rightmark = last
     done = False
     while not done:
-        while leftmark <= rightmark and data[leftmark] <= pivotvalue:
+        while leftmark <= rightmark and data[leftmark] >= pivotvalue:
             leftmark = leftmark + 1
-        while data[rightmark] >= pivotvalue and rightmark >= leftmark:
+        while data[rightmark] <= pivotvalue and rightmark >= leftmark:
             rightmark = rightmark -1
         if rightmark < leftmark:
             done = True
@@ -33,6 +33,6 @@ def partition(data,first,last):
     data[first] = data[rightmark]
     data[rightmark] = temp
     return rightmark
-data = [54,26,93,17,77,31,44,55,20]
+data = [0.1,0.2,0.3,0.4,0.5,0.21,0.22,0.32,0.54,0.14]
 quickSort(data)
 print(data)
