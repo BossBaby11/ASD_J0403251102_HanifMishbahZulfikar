@@ -1,0 +1,5 @@
+ID_001,Renungan,30000
+ID_002,Malam,40000
+ID_003,Bumi,60000
+ID_004,Bulan,50000
+ID_005,Bintang,70000
